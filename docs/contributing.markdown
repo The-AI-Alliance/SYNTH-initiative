@@ -154,7 +154,7 @@ dataset-url: ${document.getElementById('dataset-url').value}
 dataset-card: ${document.getElementById('dataset-card').value}
             `;
             const body = body1.replace(/ /g, '%20').replace(/:/g, '%3A%20').replace(/\n/g, '%0D%0A');
-            const mailto = `mailto:data@thealliance.ai?subject=I%20want%20to%20contribute%20an%20OTDI%20dataset&${body}`
+            const mailto = `mailto:data@thealliance.ai?subject=I%20want%20to%20contribute%20a%20SYNTH%20dataset&${body}`
             try {
                 window.open(mailto, '_contribute_email').focus();
             } catch (error) {
