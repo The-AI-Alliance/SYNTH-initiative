@@ -5,9 +5,9 @@ nav_order: 100
 has_children: false
 ---
 
-# About MICROSITE_TITLE and The AI Alliance
+# About SYNTH Initiative and The AI Alliance
 
-**MICROSITE_TITLE** is a project of the [WORK_GROUP_NAME](WORK_GROUP_URL){:target="wg"} work group in [The AI Alliance](https://thealliance.ai){:target="ai-alliance"}. 
+**SYNTH Initiative** is a project of the [Foundation Models and Datasets](https://thealliance.ai/focus-areas/foundation-models){:target="wg"} work group in [The AI Alliance](https://thealliance.ai){:target="ai-alliance"}. 
 
 Please join us! See our [contributing]({{site.baseurl}}/contributing) page for details.
 
