@@ -3,7 +3,7 @@
 _Ultimate Synthetic Multilingual Open Data Corpus for Frontier Sovereign AI Models and Agentic Applications_
 
 {: tip}
-> [Published Documentation](https://the-ai-alliance.github.io/SYNTH-initiative/){target="docs"}
+> [Published Documentation](https://the-ai-alliance.github.io/SYNTH-initiative/){:target="docs"}
 
 The SYNTH initiative aims to address the critical gap in open-source AI development by creating a cutting-edge, open-source data corpus for training sovereign AI models and advanced AI agents. This involves curating permissively licensed, high-quality multilingual datasets, with a focus on underrepresented languages, and generating synthetic data specifically designed to enhance frontier-level reasoning capabilities in these languages. The ultimate mission is to enable global access to advanced AI reasoning by fostering an inclusive data ecosystem that supports the full training pipeline of sophisticated AI systems, thereby reducing dependency on proprietary data and closed models.
 
