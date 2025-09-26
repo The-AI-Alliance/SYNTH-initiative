@@ -14,7 +14,156 @@ The following people and organizations have contributed to the creation and main
 
 We welcome your contributions! 
 
-TODO: more specific ways to contribute.
+
+## Contribute Your Dataset
+
+Use this form to tell us about your dataset and where it is hosted. It will open your email client with the information added and formatted. After we receive your email, we will follow up with next steps.
+
+<div class="callout-box centered">
+  <strong>For questions, send us email at <a href="mailto:data@thealliance.ai?subject=I%20have%20questions%20about%20contributing%20a%20SYNTH%20dataset">data@thealliance.ai</a>.</strong>
+</div>
+<form id="datasets-form">
+    <!-- <div class="form-dataset disabled" inert> -->
+    <div class="form-dataset"> 
+        <table class="form-dataset-table">
+            <tr>
+                <th class="form-dataset-table-label">
+                  <label for="dataset-name">Dataset&nbsp;name:</label>
+                </th>
+                <td class="form-dataset-table-value">
+                  <input type="text" id="dataset-name" name="dataset-name" class="form-dataset-table-input" placeholder="A descriptive and unique name" required />   
+                </td>
+            </tr>
+            <tr>
+                <th class="form-dataset-table-label">
+                  <label for="dataset-location">Dataset&nbsp;location:</label>
+                </th>
+                <td class="form-dataset-table-value">
+                  <input type="url" id="dataset-url" name="dataset-url" class="form-dataset-table-input" placeholder="https://some-special-place.com" pattern="https://.*" required />
+                </td>
+            </tr>
+            <tr>
+                <th class="form-dataset-table-label">
+                  <label for="dataset">Dataset&nbsp;card:</label>
+                </th>
+                <td class="form-dataset-table-value">
+                  <input type="url" id="dataset-card" name="dataset-url" class="form-dataset-table-input" placeholder="https://some-special-place.com" pattern="https://.*" /> Leave blank if the dataset is hosted by Hugging Face and the README <em>is</em> the dataset card.
+                </td>
+            </tr>
+            <!--
+            <tr>
+                <th class="form-dataset-table-label">
+                  <label for="dataset-hosting">Hosting:</label>
+                </th>
+                <td class="form-dataset-table-value">
+                  <input type="checkbox" id="dataset-alliance-hosting" name="dataset-alliance-hosting" unchecked /> I want the AI Alliance to host this dataset.
+                </td>
+            </tr>
+            <tr>
+                <th class="form-dataset-table-label">
+                  <label for="modality">Modalities:</label>
+                </th>
+                <td class="form-dataset-table-value">
+                    <div>
+                      <input type="checkbox" id="dataset-modality-text" name="dataset-modality-text" class="form-dataset-table-checkbox" checked />
+                      <label for="text">Text</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="dataset-modality-text" name="dataset-modality-text" class="form-dataset-table-checkbox" />
+                      <label for="images">Images</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="dataset-modality-text" name="dataset-modality-text" class="form-dataset-table-checkbox" />
+                      <label for="audio">Audio</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="dataset-modality-text" name="dataset-modality-text" class="form-dataset-table-checkbox" />
+                      <label for="video">Video (including audio)</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="dataset-modality-text" name="dataset-modality-text" class="form-dataset-table-checkbox" />
+                      <label for="video">Other (e.g., science data)</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class="form-dataset-table-label">
+                    <label for="domain">Domain:</label>
+                </th>
+                <td class="form-dataset-table-value">
+                  <select id="dataset-domain" name="dataset-domain" class="form-dataset-table-input">
+                    <optgroup label="General Purpose">
+                      <option default>Not domain specific</option>
+                    </optgroup>
+                    <optgroup label="Science & Industrial">
+                      <option>Climate</option>
+                      <option>Marine</option>
+                      <option>Materials</option>
+                      <option>Semiconductors</option>
+                      <option>Time Series</option>
+                      <option>Other Industrial</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                      <option>Finance</option>
+                      <option>Healthcare</option>
+                      <option>Legal</option>
+                      <option>Social Science</option>
+                    </optgroup>
+                  </select>
+                  Or another domain? 
+                  <input type="text" id="dataset-other-domain" name="dataset-other-domain" class="form-dataset-table-input-shorter" placeholder="Your domain suggestion" required />
+                </td>
+            </tr>
+            <tr>
+                <th class="form-dataset-table-label">
+                  <label for="email">Email:</label>
+                </th>
+                <td class="form-dataset-table-value">
+                  <input type="email" id="email" name="email" class="form-dataset-table-input" placeholder="Your email address" required />   
+                </td>
+            </tr>
+            <tr>
+                <th class="form-dataset-table-label">
+                &nbsp;
+                </th>
+                <td class="form-dataset-table-value">
+                  <input type="checkbox" id="agree-to-terms" name="agree-to-terms" required /> I agree to the terms for contribution.
+                </td>
+            </tr>
+            -->
+            <tr>
+                <th class="form-dataset-table-label">
+                &nbsp;
+                </th>
+                <td class="form-dataset-table-value">
+                  <input type="submit" value="Submit!" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+<script>
+  <!-- Necessary to have the file browser limit all the allowed sections to what "accept=''" specifies: -->
+  var test = document.querySelector('input');
+
+  const form = document.getElementById('datasets-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const body1 = `body=dataset-name: ${document.getElementById('dataset-name').value}
+dataset-url: ${document.getElementById('dataset-url').value}
+dataset-card: ${document.getElementById('dataset-card').value}
+            `;
+            const body = body1.replace(/ /g, '%20').replace(/:/g, '%3A%20').replace(/\n/g, '%0D%0A');
+            const mailto = `mailto:data@thealliance.ai?subject=I%20want%20to%20contribute%20an%20OTDI%20dataset&${body}`
+            try {
+                window.open(mailto, '_contribute_email').focus();
+            } catch (error) {
+                console.error('Error formatting or submitting an email:', error);
+            }
+        });
+</script>
+
+## Other Ways to Contribute
 
 Ways to suggest ideas:
 * Post a [discussion topic](https://github.com/The-AI-Alliance/SYNTH-initiative/discussions){:target="discussions"} 
@@ -39,10 +188,6 @@ The link is used by the default docs/_includes/header_buttons_custom.html, for e
 Want to help us drive the evolution of this project? Please join our work group. 
 
 Use the form on the Alliance's [Become a collaborator](https://thealliance.ai/become-a-collaborator){:target="join-collab"} page to let us know your interests. 
-
-Check these boxes on the form:
-
-- [ ] TODO
 
 In the &ldquo;Message&rdquo; box mention this project, **SYNTH Initiative**, and add anything else you would like us to know.
 
