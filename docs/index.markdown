@@ -7,74 +7,51 @@ has_children: false
 
 # SYNTH Initiative
 
-| **Authors**     | [Foundation Models and Datasets](https://thealliance.ai/focus-areas/foundation-models){:target="wg"} (See the [Contributors]({{site.baseurl}}/contributing/#contributors)) |
-| **Last Update** | {{site.last_version}}, {{site.last_modified_timestamp}} |
-
-Welcome to the **The AI Alliance**: **SYNTH Initiative**. 
+_Ultimate Synthetic Multilingual Open Data Corpus for Frontier Sovereign AI Models and Agentic Applications_
 
 {: .tip }
 > **TIP:** Use the search box at the top of this page to find specific content.
 
-{: .attention }
-> Please join us! See our [contributing]({{site.baseurl}}/contributing) page for details.
+Welcome to the **The AI Alliance**: **SYNTH Initiative**. This initiative aims to address the critical gap in open-source AI development by creating a cutting-edge, open-source data corpus for training sovereign AI models and advanced AI agents. This involves curating permissively licensed, high-quality multilingual datasets, with a focus on underrepresented languages, and generating synthetic data specifically designed to enhance frontier-level reasoning capabilities in these languages. The ultimate mission is to enable global access to advanced AI reasoning by fostering an inclusive data ecosystem that supports the full training pipeline of sophisticated AI systems, thereby reducing dependency on proprietary data and closed models.
 
-{: .note }
-> **NOTE:** This is a work-in-progress website for the SYNTH Initiative.
+## The Problems to Address
 
-{: .important }
-> **IMPORTANT:** The "boilerplate" text on this page mixes content you might want to use, as well as tips on writing Markdown. See also the comments in the source files. Make sure you search for and change all TODOs on all the pages!
+Current open source AI development faces a fundamental asymmetry. Large-scale pretraining datasets like The Pile, FineWeb or Dolma have enabled the creation of capable base models. However, the transition from base models to frontier-grade systems and exceptional agentic applications requires specialized datasets for:
 
-{: .warning }
-> **WARNING!** This is a warning! Don't forgot to clean up the TODOs!
+- Midtraining: Domain-specific, multi-modal, high-quality data that bridges general pretraining and task-specific fine-tuning, crucial for advancing downstream models and context relevant AI agents  
+- Reinforcement Learning: Training data for developing advanced reasoning capabilities, including multi-step problem solving, mathematical reasoning, and complex analytical tasks, increasingly useful in agentic workflows  
+- Frontier Reasoning Development: High-quality examples of sophisticated reasoning chains, logical inference patterns, and systematic problem decomposition 
 
-A _generic_ quote:
 
-> Shakespeare once wrote, "Heavy is the head that wears the crown."
+These critical training phases currently rely heavily on proprietary datasets or synthetic data generated from closed frontier models, creating a dependency that undermines the open-source ecosystem's ability to develop advanced reasoning capabilities independently.
 
-This site is organized into the following sections [^1] (with an example footnote):
+## Goals
 
-* [TODO - second top-level page]({{site.baseurl}}/second_page)
-    * [alternative link](second_page)
-* [TODO - nested]({{site.baseurl}}/nested/)
+### 1. Curate Permissively Licensed Seed Collections
 
-Note how relative links are written. For siblings (like the next set of bullets...) or subpages, you don't have to use the `{{site.baseurl}}` prefix (like the `alternative link`), but use `{{site.baseurl}}` instead of relative navigation hacks like `../../foo/bar`.
+The SYNTH initiative identifies and aggregates *exceptional quality, multilingual, domain specific* *datasets with permissive licensing* that ensures unrestricted sharing, auditing, and future use. This includes expanding upon foundational resources like Pleias's Common Corpus while specifically targeting underrepresented languages from Eastern Europe, Asia, Africa, and other regions. The focus is on building reasoning capabilities across diverse linguistic contexts, as current frontier reasoning models exhibit significant performance gaps in lower-resource languages, limiting their global applicability for complex problem-solving tasks.
 
-## Section Two
+### 2. Generate Synthetic Data for Multilingual Frontier Reasoning Models
 
-A Python code block:
+SYNTH provides a platform to develop systematic approaches to create high-quality synthetic datasets for midtraining and reinforcement learning that specifically target advanced reasoning capabilities across multiple languages, particularly lower-resource ones. This is crucial because reasoning capabilities‚ like mathematical problem-solving, logical inference, multi-step analytical thinking‚ are often severely degraded or entirely absent in underrepresented languages. The generation process must leverage diverse, high-quality multilingual open seed data rather than relying solely on closed frontier models, ensuring the resulting synthetic corpus maintains openness while achieving the quality and linguistic diversity necessary for training models capable of sophisticated reasoning across all languages.
 
-```python
-def flibulate_the_ganzinator(how_much):
-  pass
-```
+### 3. Enable Sovereign AI and Agentic Applications Development
 
-Additional links: [^2]
+The SYNTH initiative creates the data infrastructure necessary for regions and organizations to develop culturally and linguistically aligned, technologically advanced AI models and agents with strong reasoning capabilities in their native languages. This addresses the critical gap where current frontier reasoning models perform well primarily in English and a few high-resource languages, leaving billions of speakers unable to access sophisticated AI reasoning in their native languages.
 
-* [Contributing]({{site.baseurl}}/contributing): We welcome your contributions! Here's how you can contribute.
+## Expected Impact
+
+SYNTH initiative will provide the missing link in open AI development: the specialized, high-quality datasets necessary to transform capable base models into frontier-grade reasoning systems. By ensuring permissive licensing throughout the pipeline, we preserve the ability for global researchers, organizations, and regions to build, audit, and customize AI systems that serve their specific needs and values.
+
+The result will be a comprehensive data ecosystem that supports not just model pretraining, but the full spectrum of advanced training techniques necessary for developing AI systems with sophisticated reasoning capabilities that are both technically advanced and globally inclusive.
+
+
+## Getting Involved
+
+* We welcome [contributions]({{site.baseurl}}/contributing)!
 * [About Us]({{site.baseurl}}/about): More about the AI Alliance and this project.
 * [The AI Alliance](https://thealliance.ai){:target="ai-alliance"}: The AI Alliance website.
 * [Project GitHub Repo](https://github.com/The-AI-Alliance/SYNTH-initiative){:target="repo"}
-
-Note our convention that external URLs include a target, specified with `{:target="some_name"}`. Adding these targets means browsers will automatically open external links in a new tab. You will also notice that external links get a little box and arrow adornment. This is done automatically through a clever CSS hack in `docs/_includes/css/custom.scss.liquid`.
-
-A table example using standard Markdown and showing how to set the desired alignment. (The extra whitespace in the source is only for easier readability.):
-
-| Column 1 (Left Aligned) | Column 2 (Centered) | Column 3 (Numbers - Right Aligned) |
-| :------- | :------------------: | -----: |
-| text 1   | centered             | 1      |
-| text 2   | also centered        | 20     |
-| text 3   | and this is centered | 300    |
-
-[^1]: Use `[^N]` (for increasing `N` values) to mark "footnote #N" in text, as shown above. This is an example footnote with a link to it from above, and a link at the end of the footnote to go back to the point in the text (the "curled" arrow). **WARNING**, you must include the colon in the footnote definition as shown here, `[^1]:`.
-[^2]: A second example footnote. Note that you don't need to put a blank line between them; they work like lists.
-
-<!-- 
-Use the following construct anywhere in the page to automatically
-show a table of contents for the sections on the page. This is 
-_different_ than a list of child pages (i.e., separate markdown files).
-That list is always shown at the bottom automatically, as defined in
-the default.html template file.
--->
 
 ---
 

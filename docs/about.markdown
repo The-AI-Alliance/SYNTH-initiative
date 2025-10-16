@@ -21,3 +21,6 @@ If you have any questions or concerns about this effort, please contact us at [d
 * [More About the AI Alliance](https://thealliance.ai/about-aia){:target="ai-alliance"}
 * [Contact Us](mailto:data@thealliance.ai) (email)
 * Follow us on [LinkedIn](https://www.linkedin.com/company/the-aialliance/){:target="linkedin"} and [Bluesky](https://bsky.app/profile/aialliance.bsky.social){:target="bluesky"}
+
+| **Authors**     | [Foundation Models and Datasets](https://thealliance.ai/focus-areas/foundation-models){:target="wg"} (See the [Contributors]({{site.baseurl}}/contributing/#contributors)) |
+| **Last Update** | {{site.last_version}}, {{site.last_modified_timestamp}} |
