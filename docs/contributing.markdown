@@ -99,7 +99,7 @@ dataset-card: ${document.getElementById('dataset-card').value}
 * Post an [issue](https://github.com/The-AI-Alliance/SYNTH-initiative/issues){:target="issues"} 
 * Send us [email](mailto:data@thealliance.ai). This is a general email address, so be sure to mention this particular project.
 
-Pull requests (PRs) are one way to contribute significant new content and other assets. For simple page edits, each website page has an _Edit this page on GitHub_ link for quick suggestions.
+[Pull requests](https://github.com/The-AI-Alliance/SYNTH-initiative/pulls){:target="pulls"} (PRs) are one way to contribute significant new content and other assets. For simple page edits, each website page has an _Edit this page on GitHub_ link for quick suggestions.
 
 For bigger PR contributions, please see our [Alliance community repo](https://github.com/The-AI-Alliance/community/) for general information about contributing to any of our projects. This section provides some specific details you need to know.
 
