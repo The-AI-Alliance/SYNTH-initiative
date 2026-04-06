@@ -101,13 +101,13 @@ dataset-card: ${document.getElementById('dataset-card').value}
 
 [Pull requests](https://github.com/The-AI-Alliance/SYNTH-initiative/pulls){:target="pulls"} (PRs) are one way to contribute significant new content and other assets. For simple page edits, each website page has an _Edit this page on GitHub_ link for quick suggestions.
 
-For bigger PR contributions, please see our [Alliance community repo](https://github.com/The-AI-Alliance/community/) for general information about contributing to any of our projects. This section provides some specific details you need to know.
+For bigger PR contributions, please see our [Alliance community repo](https://github.com/The-AI-Alliance/community/){:target="community"} for general information about contributing to any of our projects. This section provides some specific details you need to know.
 
-In particular, see the AI Alliance [CONTRIBUTING](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md) instructions. You will need to agree with the AI Alliance [Code of Conduct](https://github.com/The-AI-Alliance/community/blob/main/CODE_OF_CONDUCT.md).
+In particular, see the AI Alliance [CONTRIBUTING](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md){:target="community"} instructions. You will need to agree with the AI Alliance [Code of Conduct](https://github.com/The-AI-Alliance/community/blob/main/CODE_OF_CONDUCT.md){:target="community"}.
 
-All _code_ contributions are licensed under the [Apache 2.0 LICENSE](https://github.com/The-AI-Alliance/community/blob/main/LICENSE.Apache-2.0) (which is also in this repo, [LICENSE.Apache-2.0](LICENSE.Apache-2.0)).
+All _code_ contributions are licensed under the [Apache 2.0 LICENSE](https://github.com/The-AI-Alliance/community/blob/main/LICENSE.Apache-2.0){:target="community"} (which is also in this repo, [LICENSE.Apache-2.0](LICENSE.Apache-2.0)).
 
-All _documentation_ contributions are licensed under the [Creative Commons Attribution 4.0 International](https://github.com/The-AI-Alliance/community/blob/main/LICENSE.CC-BY-4.0) (which is also in this repo, [LICENSE.CC-BY-4.0](LICENSE.CC-BY-4.0)).
+All _documentation_ contributions are licensed under the [Creative Commons Attribution 4.0 International](https://github.com/The-AI-Alliance/community/blob/main/LICENSE.CC-BY-4.0){:target="community"} (which is also in this repo, [LICENSE.CC-BY-4.0](LICENSE.CC-BY-4.0)).
 
-All _data_ contributions are licensed under the [Community Data License Agreement - Permissive - Version 2.0](https://github.com/The-AI-Alliance/community/blob/main/LICENSE.CDLA-2.0) (which is also in this repo, [LICENSE.CDLA-2.0](LICENSE.CDLA-2.0)).
+All _data_ contributions are licensed under the [Community Data License Agreement - Permissive - Version 2.0](https://github.com/The-AI-Alliance/community/blob/main/LICENSE.CDLA-2.0){:target="community"} (which is also in this repo, [LICENSE.CDLA-2.0](LICENSE.CDLA-2.0)).
 
